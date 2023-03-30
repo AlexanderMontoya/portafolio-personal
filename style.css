@@ -19,6 +19,7 @@ body{
 .hero{
     width: 100%;
     height: 100vh;
+    position: relative;
     background-image: var(--background),url(img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +71,11 @@ body{
     font-size: 30px;
 }
 
+.nav__button.close{
+    background-color: white;
+    color: #405CD5;
+}
+
 .nav__responsive{
     width: 100%;
     height: 100vh;
@@ -87,10 +93,21 @@ body{
     color: white;
     transition: color 1s;
     font-weight: 700;
+    position: relative;
 }
 
-.nav__items:hover{
-    color: #c93c3c;
+.before_nav__items::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    bottom: -7px;
+    transition: width 1s;
+}
+
+.before_nav__items:hover::before{
+    width: 100%;
 }
 
 .nav__container .nav__items{
@@ -216,7 +233,7 @@ body{
 }
 
 .skills{
-    padding-top: 120px;
+    padding: 120px 0px;
 }
 
 .skills__paragraph{
@@ -278,8 +295,34 @@ body{
 }
 
 .projects{
+    min-height: 100vh;
     background-color: #f2f2f2;
     padding: 120px 0px;
+}
+
+.project__btns{
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.project__btn{
+    width: 150px;
+    padding: 18px 0px;
+    font-size: 16px;
+    border: 5px solid transparent;
+    outline: none;
+    background-color: var(--color_subtitle);
+    color: white;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.project__btn--active{
+    border-bottom: 7px solid white;
+}
+
+.project__btn:hover{
+    background-color: var(--color_projects);
 }
 
 .projects__grid{
@@ -292,6 +335,14 @@ body{
  position: relative; 
  overflow: hidden;
  border-radius: 20px;
+ animation: desplegar 2s;
+}
+
+@keyframes desplegar {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
 }
 
 .projects__item:hover .projects__picture{
@@ -341,6 +392,10 @@ body{
     color: white;
     font-size: 14px;
     text-decoration: none;
+}
+
+.projects__links.none{
+    display: none;
 }
 
 .footer__container{
@@ -470,6 +525,10 @@ body{
     /*Hero*/
     .hero__container{
         padding-top: 120px;
+    }
+    /*Project buttons*/
+    .project__btn{
+        width: 110px;
     }
 }
 

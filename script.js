@@ -1,4 +1,3 @@
-console.log("Hola Mundo");
 let nav=false;
 function viewNav(){
     if(nav){

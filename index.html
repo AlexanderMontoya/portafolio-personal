@@ -15,17 +15,17 @@
     <header class="hero">
         <nav class="nav">
             <div class="nav__container">
-                <a class="nav__items" href="#AboutMe">Sobre mi</a>
-                <a class="nav__items" href="#Skills">Habilidades</a>
-                <a class="nav__items" href="#Projects">Proyectos</a>
+                <a class="nav__items before_nav__items" href="#AboutMe">Sobre mi</a>
+                <a class="nav__items before_nav__items" href="#Skills">Habilidades</a>
+                <a class="nav__items before_nav__items" href="#Projects">Proyectos</a>
                 <a class="nav__items nav__items--cta" href="#">Contactame ahora</a>    
             </div>
             <button class="nav__button fa-solid fa-bars" onclick="viewNav()"></button>
             <div class="nav__responsive" id="nav__responsive">
-                <button class="nav__button fa-solid fa-xmark" onclick="viewNav()"></button>
-                <a class="nav__items" href="#AboutMe" onclick="viewNav()">Sobre mi</a>
-                <a class="nav__items" href="#Skills" onclick="viewNav()">Habilidades</a>
-                <a class="nav__items" href="#Projects" onclick="viewNav()">Proyectos</a>
+                <button class="nav__button close fa-solid fa-xmark" onclick="viewNav()"></button>
+                <a class="nav__items before_nav__items" href="#AboutMe" onclick="viewNav()">Sobre mi</a>
+                <a class="nav__items before_nav__items" href="#Skills" onclick="viewNav()">Habilidades</a>
+                <a class="nav__items before_nav__items" href="#Projects" onclick="viewNav()">Proyectos</a>
                 <a class="nav__items nav__items--cta" href="#" onclick="viewNav()">Contactame ahora</a> 
             </div>
         </nav>
@@ -128,34 +128,15 @@
         <section class="projects" id="Projects">
             <div class="container">
                 <h2 class="subtitle">Mis proyectos</h2>
-                <div class="projects__grid">
-                    <article class="projects__item">
-                        <img src="img/pokemontoya.jpg" alt="projects" class="projects__picture">
-                        <div class="projects__details">
-                            <h3 class="projects__title">PokeMontoya</h3>
-                            <p class="projects__paragraph">Juego de memorizacion usando la API de Pokemon, A completar la pokedex!</p>
-                            <a class="projects__links" href=""><i class="fa-solid fa-earth-americas"></i> Sitio Web</a>
-                            <a class="projects__links" href=""><i class="fa-brands fa-github"></i> Repositorio</a>
-                        </div>
-                    </article>
-                    <article class="projects__item">
-                        <img src="img/pokemontoyav2.jpg" alt="projects" class="projects__picture">
-                        <div class="projects__details">
-                            <h3 class="projects__title">PokeMontoya</h3>
-                            <p class="projects__paragraph">Juego de memorizacion usando la API de Pokemon, A completar la pokedex!</p>
-                            <a class="projects__links" href=""><i class="fa-solid fa-earth-americas"></i> Sitio Web</a>
-                            <a class="projects__links" href=""><i class="fa-brands fa-github"></i> Repositorio</a>
-                        </div>
-                    </article>
-                    <article class="projects__item">
-                        <img src="img/OnMarket.jpg" alt="projects" class="projects__picture">
-                        <div class="projects__details">
-                            <h3 class="projects__title">OnMarket</h3>
-                            <p class="projects__paragraph">Tienda Virtual de productos para el hogar (Laravel)</p>
-                            <a class="projects__links" href=""><i class="fa-solid fa-earth-americas"></i> Sitio Web</a>
-                            <a class="projects__links" href=""><i class="fa-brands fa-github"></i> Repositorio</a>
-                        </div>
-                    </article>
+                <div class="project__btns">
+                    <button class="project__btn project__btn--active" onclick="viewProjects('personal')" disabled>
+                        Personal
+                    </button>
+                    <button class="project__btn" onclick="viewProjects('instituto')">
+                        Instituto
+                    </button>
+                </div>
+                <div class="projects__grid" id="projects__grid">
                     
                 </div>
             </div>
@@ -172,11 +153,7 @@
             {Developed by Alexander Montoya}
         </div>
     </footer>
-    <!-- <a class="fa-solid fa-envelope" href=""></a>
-    <a class="fa-brands fa-linkedin" href=""></a>
-    <a class="fa-brands fa-github" href=""></a> -->
-    
-
+    <script src="projects.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
