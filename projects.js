@@ -6,8 +6,8 @@ let projects=[
         image_project: "pokemontoyav2.jpg",
         habilities: [],
         type_proyect: "personal",
-        url_web: "#",
-        url_repository: "#",
+        url_web: "https://alexandermontoya.github.io/pokemontoya/",
+        url_repository: "https://github.com/AlexanderMontoya/pokemontoya",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ let projects=[
         habilities: [],
         type_proyect: "instituto",
         url_web: "#",
-        url_repository: "#",
+        url_repository: "https://github.com/AlexanderMontoya/onmarket",
     },
     {
         id: 3,
@@ -26,8 +26,8 @@ let projects=[
         image_project: "Slider-ManGama-Chan.jpg",
         habilities: [],
         type_proyect: "personal",
-        url_web: "#",
-        url_repository: "#",
+        url_web: "https://alexandermontoya.github.io/slider-mangamachan/",
+        url_repository: "https://github.com/AlexanderMontoya/slider-mangamachan",
     },
     {
         id: 4,
