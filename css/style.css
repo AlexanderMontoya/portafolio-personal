@@ -164,7 +164,6 @@ body{
 }
 
 .presentation{
-    height: 100vh;
     padding-top: 120px;
     text-align: center;
 }
@@ -232,6 +231,8 @@ body{
     color: white;
 }
 
+/*Skills*/
+
 .skills{
     padding: 120px 0px;
 }
@@ -293,6 +294,8 @@ body{
 .skills__item:hover .skills__hover{
     opacity: 1;
 }
+
+/*Projects*/
 
 .projects{
     min-height: 100vh;

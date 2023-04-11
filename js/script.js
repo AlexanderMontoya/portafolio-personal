@@ -1,4 +1,10 @@
 let nav=false;
+
+const enlaces = document.querySelectorAll('.nav__responsive .nav__items, .nav__button');
+enlaces.forEach((enlace,i)=>{
+    enlaces[i].addEventListener('click',()=>{viewNav()})
+})
+
 function viewNav(){
     if(nav){
         document.getElementById('nav__responsive').style.transform="translateX(100%)"

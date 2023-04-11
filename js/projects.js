@@ -60,6 +60,7 @@ botones_project.forEach(( cadaBtn, i)=>{
         })
         botones_project[i].classList.add('project__btn--active');
         botones_project[i].disabled=true;
+        viewProjects(botones_project[i].value)
     })
 })
         
