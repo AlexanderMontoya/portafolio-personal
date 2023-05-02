@@ -10,6 +10,22 @@
     --color_subtitle:#405CD5 ;
     --color_paragraph:#40a6d5;
     --color_projects:#40a6d5b4;
+
+    /*Frontend*/
+    --color-html: #E34F26;
+    --color-css: #1572B6;
+    --color-sass: #CC6699;
+    --color-javascript: #F7DF1E;
+
+    /*Backend*/
+    --color-python: #0072B1 ;
+    --color-php: #787CB5 ;
+    --color-java: #E76F51 ;
+    /*Librerias y frameworks*/
+    --color-bootstrap: #7952b3;
+    --color-laravel: #ff2d20;
+    --color-angular: #DD1B16;
+    --color-react: #61DAFB;
 }
 
 body{
@@ -241,58 +257,121 @@ body{
     margin-bottom: 10px;
 }
 
-.skills__frontend{
-    width: 100%;
-    height: 200px;
-    background-color: #D540A6;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 7px solid white;
+.skills__title{
+    color: rgb(115, 115, 211);
+    margin-bottom: 10px;
 }
 
-.skills__backend{
-    background-color: #D5405B;
-    width: 100%;
-    height: 200px;
+.skills___content{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills___content h3{
+    width: 100%;
 }
 
 .skills__item{
-    width: 85px;
-    padding: 20px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 120px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-align: center;
-    background-color: #6F40D5;
     color: white;
-    font-size: 40px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    
+    padding: 10px 5px;
+    transition: background 1s, color 1s;
 }
 
-.skills__hover{
-    opacity: 0;
-    width: 110px;
-    position: absolute;
-    left: -10px;
-    bottom: -35px;
-    padding: 5px 10px;
-    background-color: #6F40D5;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    transition: opacity 1s;
+.skills__item.html{
+    border: 1px solid var(--color-html);
+    color: var(--color-html);
+}
+.skills__item.html:hover{
+    background-color: var(--color-html);
+}
+.skills__item.css{
+    border: 1px solid var(--color-css);
+    color: var(--color-css);
+}
+.skills__item.css:hover{
+    background-color: var(--color-css);
+}
+.skills__item.javascript{
+    border: 1px solid var(--color-javascript);
+    color: var(--color-javascript);
+}
+.skills__item.javascript:hover{
+    background-color: var(--color-javascript);
+}
+.skills__item.sass{
+    border: 1px solid var(--color-sass);
+    color: var(--color-sass);
+}
+.skills__item.sass:hover{
+    background-color: var(--color-sass);
+}
+.skills__item.react{
+    border: 1px solid var(--color-react);
+    color: var(--color-react);
+}
+.skills__item.react:hover{
+    background-color: var(--color-react);
+}
+.skills__item.angular{
+    border: 1px solid var(--color-angular);
+    color: var(--color-angular);
+}
+.skills__item.angular:hover{
+    background-color: var(--color-angular);
+}
+.skills__item.php{
+    border: 1px solid var(--color-php);
+    color: var(--color-php);
+}
+.skills__item.php:hover{
+    background-color: var(--color-php);
+}
+.skills__item.java{
+    border: 1px solid var(--color-java);
+    color: var(--color-java);
+}
+.skills__item.java:hover{
+    background-color: var(--color-java);
+}
+.skills__item.python{
+    border: 1px solid var(--color-python);
+    color: var(--color-python);
+}
+.skills__item.python:hover{
+    background-color: var(--color-python);
+}
+/*Librerias y frameworks*/
+.skills__item.bootstrap{
+    border: 1px solid var(--color-bootstrap);
+    color: var(--color-bootstrap);
+}
+.skills__item.bootstrap:hover{
+    background-color: var(--color-bootstrap);
+}
+.skills__item.laravel{
+    border: 1px solid var(--color-laravel);
+    color: var(--color-laravel);
+}
+.skills__item.laravel:hover{
+    background-color: var(--color-laravel);
 }
 
 .skills__item:hover{
-    overflow: visible;
+    color: white;
 }
 
-.skills__item:hover .skills__hover{
-    opacity: 1;
+.skills__item i{
+    font-size: 20px;
 }
 
 /*Projects*/
@@ -506,15 +585,7 @@ body{
     }
 
     /*Skills*/
-    .skills__item{
-        width: 60px;
-        padding: 10px 0px;
-    }
-    .skills__hover{
-        width: 90px;
-        left: -15px;
-        font-size: 16px;
-    }
+    
 
     /*Footer*/
     .footer__nav{
@@ -537,17 +608,7 @@ body{
 
 @media only screen and (max-width:321px){
     /*Skills*/
-    .skills__item{
-        width: 50px;
-        font-size: 30px;
-    }
-
-    .skills__hover{
-        width: 80px;
-        left: -10px;
-        font-size: 14px;
-        padding: 5px 0px;
-    }
+    
 
     /*Projetcs*/
     /* .projects__details{
