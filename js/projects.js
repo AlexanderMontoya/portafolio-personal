@@ -48,6 +48,16 @@ let projects=[
         type_proyect: "instituto",
         url_web: "https://alexandermontoya.github.io/mangama-chan/",
         url_repository: "https://github.com/AlexanderMontoya/Proyecto-Compartido-ManGamachan",
+    },
+    {
+        id: 6,
+        name_project: "Proyecto Hospital",
+        description_project: "Aplicacion para la administracion de un hospital, desarrollado en C#",
+        image_project: "ProjectHospital.jpg",
+        habilities: [],
+        type_proyect: "instituto",
+        url_web: "#",
+        url_repository: "https://github.com/AlexanderMontoya/project-hospital",
     }
 ]
 
@@ -63,7 +73,7 @@ botones_project.forEach(( cadaBtn, i)=>{
         viewProjects(botones_project[i].value)
     })
 })
-        
+
 function viewProjects(type_project){
     const div_projects=document.getElementById('projects__grid');
     let container_projects="";
